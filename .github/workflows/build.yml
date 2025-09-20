@@ -27,4 +27,4 @@ jobs:
           git config user.name "CI Bot"
           git config user.email "ci@bot.com"
           git commit -am "Update image to $IMAGE"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/woodchat/ops-manifests.git
+          git push https://x-access-token:${{ secrets.REPO_TOKEN }}@github.com/woodchat/ops-manifests.git
