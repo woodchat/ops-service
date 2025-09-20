@@ -117,7 +117,7 @@ OLLAMA_URL = f"http://{OLLAMA_HOST}:{OLLAMA_PORT}/api/generate"
 
 @app.post("/generate")
 async def generate_text(payload: dict):
-    """Generate text with Ollama Tiny LLM"""
+    """Generate text with Ollama tiny LLM"""
     user = payload.get("user", "anonymous")
     prompt = payload.get("prompt", "").strip()
     max_tokens = min(payload.get("max_tokens", 50), 200)
