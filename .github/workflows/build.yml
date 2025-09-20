@@ -23,7 +23,7 @@ jobs:
         run: |
           git clone https://github.com/woodchat/ops-manifests.git
           cd ops-manifests
-          sed -i "s|image: .*|image: $IMAGE|" rollout.yaml
+          sed -i "s|image: .*|image: $IMAGE|" llm-service-rollout.yaml
           git config user.name "CI Bot"
           git config user.email "ci@bot.com"
           git commit -am "Update image to $IMAGE"
